@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Abhishek Verma",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -15,77 +15,114 @@
       "to": "#07C983"
     }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
-    }
-  ],
+  "primaryTab": {
+    "name": "Home"
+  },
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Routine",
+    "url": "routine/current-routine"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "Goals",
+      "url": "goals"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Routine",
+      "url": "routine"
     },
     {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "name": "Side Hustle",
+      "url": "side-hustle"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Welcome",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "shore/introduction"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Vision",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "goals/short-term",
+        "goals/long-term"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Relationship",
       "pages": [
-        "api-reference/introduction"
+        "goals/goals",
+        "goals/self-improvement"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Career",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "goals/contribution",
+        "goals/certification"
+      ]
+    },
+    {
+      "group": "Learning",
+      "pages": [
+        "goals/learn",
+        "goals/js-cheat-sheet"
+      ]
+    },
+    {
+      "group": "Side Hustle",
+      "pages": [
+        "side-hustle/introduction",
+        "side-hustle/news",
+        "side-hustle/instrumental-music",
+        "side-hustle/audio-books",
+        {
+          "group": "Books",
+          "pages": [
+            "side-hustle/books/the-magic-door-to-adventure-land"
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Inspiration",
+      "pages": [
+        "routine/army"
+      ]
+    },
+    {
+      "group": "Personal",
+      "pages": [
+        "routine/current-routine",
+        "routine/bill-payments",
+        "routine/dressing",
+        "routine/good-habits",
+        "routine/vehicles",
+        "routine/body-check-up"
+      ]
+    },
+    {
+      "group": "Work",
+      "pages": [
+        "routine/work"
+      ]
+    },
+    {
+      "group": "Progress",
+      "pages": [
+        "routine/weekly-progress",
+        "routine/monthly-progress"
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "github": "https://github.com/mrcreatist",
+    "linkedin": "https://www.linkedin.com/in/mrcreatist",
+    "x": "https://x.com/mrcreatist",
+    "instagram": "https://instagram.com/mrcreatist",
+    "facebook": "https://www.facebook.com/mrcreatist"
   }
 }

@@ -1,0 +1,107 @@
+---
+title: 'JS Cheatsheet'
+description: Thoughts of mind orgnaized
+---
+
+Certainly! Here's a cheatsheet in a table format for various notations used in JavaScript:
+
+| Notation | Description | Example |
+| --- | --- | --- |
+| 0b | Binary Literal | const binaryNumber = 0b1010; |
+| 0o | Octal Literal | const octalNumber = 0o10; |
+| 0x | Hexadecimal Literal | const hexNumber = 0x1F; |
+| n or B | BigInt Literal (Suffix) | const bigIntNumber = 1234567890123456789012345678901234567890n; |
+| BigInt() | BigInt Constructor | const bigIntNumber = BigInt("1234567890123456789012345678901234567890"); |
+| b | BigInt Literal (Suffix for Bitwise Ops) | const bigIntNumber = 0b1010n; |
+| Bitwise Ops | Bitwise Operations with BigInts | const result = bigInt1 & bigInt2; |
+
+<AccordionGroup>
+<Accordion title="Bitwise Operators">
+    | Operator | Description | Example | Decimal Example Result |
+    | --- | --- | --- | --- |
+    | & | Bitwise AND | 5 & 3 | 1 |
+    | ` | ` | Bitwise OR | 5 | 3 |
+    | ^ | Bitwise XOR (Exclusive OR) | 5 ^ 3 | 6 |
+    | ~ | Bitwise NOT (Complement) | ~5 | -6 |
+    | \<\< | Left Shift | 5 \<\< 1 | 10 |
+    | >> | Right Shift (Sign-propagating) | 5 >> 1 | 2 |
+    | >>> | Right Shift (Zero-fill) | 5 >>> 1 | 2 |
+    - **Bitwise AND (`&`):** Sets each bit to 1 if both bits are 1.
+    - **Bitwise OR (`|`):** Sets each bit to 1 if either or both bits are 1.
+    - **Bitwise XOR (`^`):** Sets each bit to 1 if only one of the bits is 1.
+    - **Bitwise NOT (`~`):** Inverts all the bits.
+    - **Left Shift (`<<`):** Shifts left by pushing zeros in from the right and letting the leftmost bits fall off.
+    - **Right Shift (`>>`):** Shifts right, preserving the sign bit (copies the leftmost bit).
+    - **Right Shift (`>>>`):** Shifts right, filling with zeros from the left.
+</Accordion>
+<Accordion title="Array Functions">
+    | Function | Syntax | Description |
+    | --- | --- | --- |
+    | concat() | array.concat(value1, value2, ..., valueN) | Returns a new array by combining the array on which it is called with one or more arrays and/or values. |
+    | copyWithin() | array.copyWithin(target, start, end) | Copies a sequence of array elements within the array to the position starting at the target index. The copy is taken from the range specified by the start and end indices. |
+    | entries() | array.entries() | Returns a new Array Iterator object that contains the key/value pairs for each index in the array. |
+    | every() | array.every(callback(element, index, array), thisArg) | Tests whether all elements in the array pass the test implemented by the provided function. |
+    | fill() | array.fill(value, start, end) | Fills all the elements of an array from a start index to an end index with a static value. |
+    | filter() | array.filter(callback(element, index, array), thisArg) | Creates a new array with all elements that pass the test implemented by the provided function. |
+    | find() | array.find(callback(element, index, array), thisArg) | Returns the first element in the array that satisfies the provided testing function. |
+    | findIndex() | array.findIndex(callback(element, index, array), thisArg) | Returns the index of the first element in the array that satisfies the provided testing function. If no element satisfies the function, -1 is returned. |
+    | flat() | array.flat(depth) | Creates a new array with all sub-array elements concatenated into it recursively up to the specified depth. |
+    | flatMap() | array.flatMap(callback(currentValue, index, array), thisArg) | Maps each element using a mapping function, then flattens the result into a new array. |
+    | forEach() | array.forEach(callback(currentValue, index, array), thisArg) | Executes a provided function once for each array element. |
+    | includes() | array.includes(searchElement, fromIndex) | Determines whether an array includes a certain value among its entries, returning true or false as appropriate. |
+    | indexOf() | array.indexOf(searchElement, fromIndex) | Returns the first index at which a given element can be found in the array, or -1 if it is not present. |
+    | join() | array.join(separator) | Joins all elements of an array into a string, separated by the specified separator string. |
+    | keys() | array.keys() | Returns a new Array Iterator object that contains the keys for each index in the array. |
+    | lastIndexOf() | array.lastIndexOf(searchElement, fromIndex) | Returns the last index at which a given element can be found in the array, or -1 if it is not present. |
+    | map() | array.map(callback(currentValue, index, array), thisArg) | Creates a new array with the results of calling a provided function on every element in the calling array. |
+    | pop() | array.pop() | Removes the last element from an array and returns that element. |
+    | push() | array.push(element1, ..., elementN) | Adds one or more elements to the end of an array and returns the new length of the array. |
+    | reduce() | array.reduce(callback(accumulator, currentValue, index, array), initialValue) | Applies a function against an accumulator and each element in the array to reduce it to a single value. |
+    | reduceRight() | array.reduceRight(callback(accumulator, currentValue, index, array), initialValue) | Applies a function against an accumulator and each value of the array (from right-to-left) to reduce it to a single value. |
+    | reverse() | array.reverse() | Reverses the order of the elements of an array in place and returns the reversed array. |
+    | shift() | array.shift() | Removes the first element from an array and returns that removed element. |
+    | slice() | array.slice(start, end) | Returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included). |
+    | some() | array.some(callback(element, index, array), thisArg) | Tests whether at least one element in the array passes the test implemented by the provided function. |
+    | sort() | array.sort(compareFunction) | Sorts the elements of an array in place and returns the sorted array. |
+    | splice() | array.splice(start, deleteCount, item1, item2, ...) | Changes the contents of an array by removing or replacing existing elements and/or adding new elements in place. |
+    | toLocaleString() | array.toLocaleString([locales [, options]]) | Returns a string representing the elements of the array. The elements are converted to Strings using their toLocaleString methods and these Strings are separated by a locale-specific string (such as a comma ","). |
+    | toString() | array.toString() | Returns a string representing the specified array and its elements. |
+    | unshift() | array.unshift(element1, ..., elementN) | Adds one or more elements to the beginning of an array and returns the new length of the array. |
+    | values() | array.values() | Returns a new Array Iterator object that contains the values for each index in the array. |
+</Accordion>
+<Accordion title="String Functions">
+    | Function | Syntax | Description |
+    | --- | --- | --- |
+    | charAt() | string.charAt(index) | Returns the character at the specified index in a string. |
+    | charCodeAt() | string.charCodeAt(index) | Returns the Unicode of the character at the specified index in a string. |
+    | codePointAt() | string.codePointAt(pos) | Returns a non-negative integer that is the Unicode code point value of the character at the given index. |
+    | concat() | string.concat(string1, string2, ..., stringN) | Combines the text of two or more strings and returns a new string. |
+    | endsWith() | string.endsWith(searchString, length) | Determines whether a string ends with the characters of a specified string, optionally considering only the first length characters. |
+    | includes() | string.includes(searchString, position) | Determines whether one string may be found within another string, optionally starting at a specific index. |
+    | indexOf() | string.indexOf(searchValue, fromIndex) | Returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. |
+    | lastIndexOf() | string.lastIndexOf(searchValue, fromIndex) | Returns the index within the calling String object of the last occurrence of the specified value, searching backwards from fromIndex. |
+    | localeCompare() | string.localeCompare(compareString, locales, options) | Returns a number indicating whether a reference string comes before, after, or is equivalent to the given string in sort order. |
+    | match() | string.match(regexp) | Searches a string for a match against a regular expression, and returns the matches as an array. |
+    | matchAll() | string.matchAll(regexp) | Returns an iterator of all results matching a string against a regular expression, including capturing groups. |
+    | normalize() | string.normalize(form) | Returns the Unicode Normalization Form of a given string. |
+    | padEnd() | string.padEnd(targetLength, padString) | Pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length. |
+    | padStart() | string.padStart(targetLength, padString) | Pads the current string with another string (repeated, if needed) so that the resulting string reaches the given length. |
+    | repeat() | string.repeat(count) | Returns a new string consisting of the elements of the string repeated the specified number of times. |
+    | replace() | string.replace(searchValue, newValue) | Returns a new string with some or all matches of a pattern replaced by a replacement. |
+    | replaceAll() | string.replaceAll(searchValue, newValue) | Returns a new string with all matches of a pattern replaced by a replacement. |
+    | search() | string.search(regexp) | Executes the search for a match between a regular expression and this String object. |
+    | slice() | string.slice(startIndex, endIndex) | Extracts a section of a string and returns it as a new string. |
+    | split() | string.split(separator, limit) | Splits a string into an array of strings by separating the string into substrings, using a specified separator string to determine where to make each split, and optional limit. |
+    | startsWith() | string.startsWith(searchString, position) | Determines whether a string begins with the characters of a specified string, optionally starting the search at a specific position. |
+    | substring() | string.substring(indexStart, indexEnd) | Returns the part of the string between the start and end indexes, or to the end of the string. |
+    | toLocaleLowerCase() | string.toLocaleLowerCase([locale, ...locales]) | The characters within a string are converted to lowercase while respecting the current locale. |
+    | toLocaleUpperCase() | string.toLocaleUpperCase([locale, ...locales]) | The characters within a string are converted to uppercase while respecting the current locale. |
+    | toLowerCase() | string.toLowerCase() | Returns the calling string value converted to lowercase. |
+    | toString() | string.toString() | Returns a string representing the specified object. |
+    | toUpperCase() | string.toUpperCase() | Returns the calling string value converted to uppercase. |
+    | trim() | string.trim() | Removes whitespace from both ends of a string. |
+    | trimEnd() | string.trimEnd() | Removes whitespace from the end of a string. |
+    | trimStart() | string.trimStart() | Removes whitespace from the beginning of a string. |
+    | valueOf() | string.valueOf() | Returns the primitive value of the specified object. |
+</Accordion>
+</AccordionGroup>
